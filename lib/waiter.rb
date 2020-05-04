@@ -10,7 +10,7 @@ class Waiter
     @@all
 end
 def new_meal(waiter, total, tip=0)
-  Waiter.new(waiter, self, total, tip)
+  Meal.new(waiter, self, total, tip)
 end
 def meals
   Meal.all.select do |meal|
